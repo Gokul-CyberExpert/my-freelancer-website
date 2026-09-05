@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" style="">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@700&amp;display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <style>
+    @layer base {
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overscroll-behavior: none;
+      }
+
+      main>:first-child {
+        margin-top: 0 !important;
+      }
+
+      main>:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script
+    id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error": "#ba1a1a", "inverse-on-surface": "#f0f1f1", "on-tertiary-fixed-variant": "#005236", "background": "#f9f9f9", "text-secondary": "#52525b", "secondary": "#5d5e66", "on-error-container": "#93000a", "surface-container-low": "#f3f3f4", "on-primary": "#ffffff", "secondary-container": "#e3e1ec", "surface-canvas": "#ffffff", "tertiary-container": "#002113", "surface-container": "#eeeeee", "surface-container-high": "#e8e8e8", "primary": "#000000", "on-secondary": "#ffffff", "on-primary-container": "#858386", "on-primary-fixed-variant": "#474649", "text-primary": "#09090b", "on-primary-fixed": "#1c1b1d", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#002113", "tertiary": "#000000", "inverse-primary": "#c8c6c8", "on-background": "#1a1c1c", "tertiary-fixed-dim": "#4edea3", "status-active": "#10b981", "border-subtle": "#e4e4e7", "secondary-fixed-dim": "#c6c5cf", "on-surface-variant": "#47464a", "primary-container": "#1c1b1d", "error-container": "#ffdad6", "secondary-fixed": "#e3e1ec", "primary-fixed": "#e5e1e4", "on-secondary-fixed-variant": "#46464e", "text-muted": "#71717a", "primary-fixed-dim": "#c8c6c8", "surface-dim": "#dadada", "outline-variant": "#c8c5ca", "surface-variant": "#e2e2e2", "surface-muted": "#f4f4f5", "tertiary-fixed": "#6ffbbe", "on-error": "#ffffff", "surface-bright": "#f9f9f9", "surface-tint": "#5f5e60", "on-tertiary": "#ffffff", "surface": "#f9f9f9", "surface-subtle": "#fafafa", "surface-container-highest": "#e2e2e2", "on-secondary-fixed": "#1a1b22", "on-tertiary-container": "#009668", "on-secondary-container": "#63646c", "outline": "#78767b", "on-surface": "#1a1c1c", "inverse-surface": "#2f3131" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-2xl": "3rem", "space-xs": "0.5rem", "space-xl": "2rem", "gutter-desktop": "2rem", "space-2xs": "0.25rem", "space-md": "1rem", "container-max": "72rem", "space-lg": "1.5rem", "space-4xl": "6rem", "space-sm": "0.75rem", "space-3xl": "5rem", "gutter-mobile": "1.5rem" }, "fontFamily": { "display-hero-mobile": ["Inter"], "body-md": ["Inter"], "caption": ["Inter"], "label-caps": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Inter"], "body-sm": ["Inter"], "headline-lg": ["Inter"], "label-code": ["JetBrains Mono"], "display-hero": ["Inter"], "headline-md": ["Inter"], "title-md": ["Inter"] }, "fontSize": { "display-hero-mobile": ["2.25rem", { "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-md": ["1rem", { "lineHeight": "1.6", "fontWeight": "400" }], "caption": ["0.75rem", { "lineHeight": "1rem", "fontWeight": "500" }], "label-caps": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.1em", "fontWeight": "600" }], "body-lg": ["1.125rem", { "lineHeight": "1.65", "fontWeight": "400" }], "headline-sm": ["1.5rem", { "lineHeight": "1.3", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-sm": ["0.875rem", { "lineHeight": "1.5", "fontWeight": "400" }], "headline-lg": ["2.25rem", { "lineHeight": "1.2", "letterSpacing": "-0.025em", "fontWeight": "800" }], "label-code": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.05em", "fontWeight": "700" }], "display-hero": ["3.75rem", { "lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-md": ["1.875rem", { "lineHeight": "1.25", "letterSpacing": "-0.02em", "fontWeight": "700" }], "title-md": ["1.125rem", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } };</script>
+</head>
+
+<body class="bg-surface-canvas font-body-md text-body-md text-on-surface antialiased">
+  <header class="fixed top-0 inset-x-0 z-50 flex justify-center pointer-events-none pt-space-lg">
+    <div
+      class="pointer-events-auto flex items-center p-1.5 bg-surface-canvas/90 backdrop-blur-xl rounded-full shadow-[0_4px_24px_-4px_rgba(0,0,0,0.06),0_2px_8px_-2px_rgba(0,0,0,0.03)]">
+      <nav class="flex items-center gap-1"
+        data-active-classes="bg-primary text-on-primary font-body-sm text-body-sm rounded-full shadow-sm"><a
+          class="px-space-md py-space-xs rounded-full font-body-sm text-body-sm text-text-secondary hover:text-text-primary hover:bg-surface-muted transition-all duration-200"
+          data-path="home" href="/">Home</a><a
+          class="px-space-md py-space-xs rounded-full font-body-sm text-body-sm text-text-secondary hover:text-text-primary hover:bg-surface-muted transition-all duration-200"
+          data-path="about" href="/about">About</a><a
+          class="px-space-md py-space-xs rounded-full font-body-sm text-body-sm text-text-secondary hover:text-text-primary hover:bg-surface-muted transition-all duration-200"
+          data-path="services" href="/services">Services</a><a
+          class="px-space-md py-space-xs rounded-full font-body-sm text-body-sm text-text-secondary hover:text-text-primary hover:bg-surface-muted transition-all duration-200"
+          data-path="projects" href="/projects">Projects</a><a aria-current="page"
+          class="px-space-md py-space-xs transition-all duration-200 bg-primary text-on-primary font-body-sm text-body-sm rounded-full shadow-sm"
+          data-path="contact" href="/contact">Contact</a></nav>
+    </div>
+  </header>
+  <main class="w-full max-w-[72rem] mx-auto px-gutter-mobile lg:px-gutter-desktop pt-16 bg-surface-canvas">
+    <div class="flex flex-col w-full">
+      <!-- Header Intro Section -->
+      <section class="w-full pt-space-xl pb-space-2xl">
+        <div class="flex flex-col items-start max-w-3xl">
+          <!-- Header Pill Badge -->
+          <div
+            class="inline-flex items-center gap-space-xs px-space-md py-space-2xs bg-surface-muted text-text-secondary rounded-full">
+            <span class="w-2 h-2 rounded-full bg-status-active animate-pulse"></span>
+            <span class="font-caption text-caption tracking-wider uppercase font-semibold">Get In Touch</span>
+          </div>
+          <!-- Headline -->
+          <h1
+            class="mt-space-lg font-headline-lg text-headline-lg lg:font-display-hero lg:text-display-hero text-text-primary tracking-tight">
+            Have an Idea? Let's Turn It Into Something Real.
+          </h1>
+          <!-- Subtitle -->
+          <p class="mt-space-md font-body-lg text-body-lg text-text-secondary max-w-2xl leading-relaxed">
+            Whether you need a full website, a mobile app, or guidance on bringing your digital product to life, drop me
+            a message and I'll respond within 24 hours.
+          </p>
+        </div>
+      </section>
+      <!-- Main 2-Column Asymmetric Content Section -->
+      <section class="w-full pb-space-4xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl lg:gap-space-2xl items-start">
+          <!-- Left Column: Direct Contact & Context -->
+          <div class="lg:col-span-5 flex flex-col gap-space-lg">
+            <!-- Availability & Global Indicator Card -->
+            <div class="bg-surface-subtle p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-sm">
+              <div class="flex items-center gap-space-sm">
+                <span class="flex h-3 w-3 relative">
+                  <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-status-active opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-3 w-3 bg-status-active"></span>
+                </span>
+                <span class="font-title-md text-title-md text-text-primary">Available for new projects</span>
+              </div>
+              <div class="flex items-center gap-space-xs text-text-secondary font-body-sm text-body-sm">
+                <span class="material-symbols-outlined text-[18px]">public</span>
+                <span class="">Based in India Working with clients worldwide</span>
+              </div>
+              <div class="flex items-center gap-space-xs text-text-muted font-caption text-caption pt-space-2xs">
+                <span class="material-symbols-outlined text-[16px]">schedule</span>
+                <span class="">Typical response time: Within 24 hours</span>
+              </div>
+            </div>
+            <!-- Direct Email Card with Interactive Copy -->
+            <div class="bg-surface-subtle p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-md">
+              <div class="flex items-center justify-between">
+                <span class="font-label-caps text-label-caps text-text-muted uppercase">Direct Inquiries</span>
+                <span
+                  class="font-caption text-caption text-text-secondary bg-surface-muted px-space-xs py-space-2xs rounded-full">Encrypted
+                  &amp; Direct</span>
+              </div>
+              <div
+                class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm bg-surface-canvas p-space-sm rounded-xl">
+                <div class="flex items-center gap-space-xs overflow-hidden">
+                  <div class="w-8 h-8 rounded-lg bg-surface-muted flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-[18px] text-text-primary">alternate_email</span>
+                  </div>
+                  <span class="font-label-code text-label-code text-text-primary truncate"
+                    id="email-address-text">https://github.com/Gokul-CyberExpert</span>
+                </div>
+                <button
+                  class="inline-flex items-center gap-1.5 px-space-sm py-1.5 rounded-full bg-surface-muted hover:bg-surface-container text-text-primary font-caption text-caption font-semibold transition-all duration-200 shrink-0"
+                  id="copy-email-btn" onclick="copyEmail()">
+                  <span class="material-symbols-outlined text-[14px]" id="copy-icon">content_copy</span>
+                  <span id="copy-label" class="">Copy</span>
+                </button>
+              </div>
+            </div>
+            <!-- Social Profiles & Networks -->
+            <div class="bg-surface-subtle p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-md">
+              <span class="font-label-caps text-label-caps text-text-muted uppercase">Profiles &amp; Ecosystem</span>
+              <div class="grid grid-cols-2 gap-space-xs">
+                <a class="flex items-center gap-space-xs p-space-sm bg-surface-canvas hover:bg-surface-muted rounded-xl transition-all duration-200 group"
+                  href="https://github.com/Gokul-CyberExpert" rel="noopener" target="_blank">
+                  <span
+                    class="material-symbols-outlined text-[20px] text-text-secondary group-hover:text-text-primary transition-colors">terminal</span>
+                  <span class="font-body-sm text-body-sm text-text-primary font-medium">GitHub</span>
+                </a>
+                <a class="flex items-center gap-space-xs p-space-sm bg-surface-canvas hover:bg-surface-muted rounded-xl transition-all duration-200 group"
+                  href="https://linkedin.com" rel="noopener" target="_blank">
+                  <span
+                    class="material-symbols-outlined text-[20px] text-text-secondary group-hover:text-text-primary transition-colors">work</span>
+                  <span class="font-body-sm text-body-sm text-text-primary font-medium">LinkedIn</span>
+                </a>
+                <a class="flex items-center gap-space-xs p-space-sm bg-surface-canvas hover:bg-surface-muted rounded-xl transition-all duration-200 group"
+                  href="https://discord.com/users/1496848249871401002" rel="noopener" target="_blank">
+                  <span
+                    class="material-symbols-outlined text-[20px] text-text-secondary group-hover:text-text-primary transition-colors">forum</span>
+                  <span class="font-body-sm text-body-sm text-text-primary font-medium">Discord</span>
+                </a>
+                <a class="flex items-center gap-space-xs p-space-sm bg-surface-canvas hover:bg-surface-muted rounded-xl transition-all duration-200 group"
+                  href="https://instagram.com" rel="noopener" target="_blank">
+                  <span
+                    class="material-symbols-outlined text-[20px] text-text-secondary group-hover:text-text-primary transition-colors">photo_camera</span>
+                  <span class="font-body-sm text-body-sm text-text-primary font-medium">Instagram</span>
+                </a>
+              </div>
+            </div>
+            <!-- What Happens Next Process Box -->
+            <div class="bg-surface-subtle p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-md">
+              <div class="flex items-center gap-space-xs">
+                <span class="material-symbols-outlined text-text-primary text-[20px]">timeline</span>
+                <span class="font-title-md text-title-md text-text-primary">What happens next?</span>
+              </div>
+              <div class="space-y-space-sm">
+                <div class="flex items-start gap-space-sm">
+                  <span class="font-label-code text-label-code text-text-muted mt-0.5">01</span>
+                  <p class="font-body-sm text-body-sm text-text-secondary"><strong
+                      class="text-text-primary font-medium">Brief Review:</strong> I carefully inspect your
+                    requirements, tech specs, and project scope.</p>
+                </div>
+                <div class="flex items-start gap-space-sm">
+                  <span class="font-label-code text-label-code text-text-muted mt-0.5">02</span>
+                  <p class="font-body-sm text-body-sm text-text-secondary"><strong
+                      class="text-text-primary font-medium">Fast Follow-up:</strong> You'll get an email response
+                    proposing architecture, timeline, or a short sync call.</p>
+                </div>
+                <div class="flex items-start gap-space-sm">
+                  <span class="font-label-code text-label-code text-text-muted mt-0.5">03</span>
+                  <p class="font-body-sm text-body-sm text-text-secondary"><strong
+                      class="text-text-primary font-medium">Kickoff:</strong> Milestone alignment, transparent
+                    deliverables, and rapid development cycles.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Studio Reference Showcase -->
+
+          </div>
+          <!-- Right Column: Seamless Project Inquiry Form -->
+          <div class="lg:col-span-7">
+            <div class="bg-surface-subtle p-space-lg sm:p-space-xl lg:p-space-2xl rounded-3xl shadow-sm">
+              <div class="flex flex-col gap-space-2xs mb-space-xl">
+                <h2 class="font-headline-sm text-headline-sm text-text-primary">Send a Project Brief</h2>
+                <p class="font-body-sm text-body-sm text-text-secondary">Fill out the essential specs below. No
+                  bureaucracy, directly to my inbox.</p>
+              </div>
+              <form class="space-y-space-md" id="contact-form" onsubmit="handleFormSubmit(event)">
+                <!-- Row 1: Name & Email -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+                  <div class="flex flex-col gap-1.5">
+                    <label class="font-label-caps text-label-caps text-text-muted uppercase" for="name-input">Your
+                      Name</label>
+                    <input
+                      class="w-full bg-surface-canvas text-text-primary font-body-sm text-body-sm px-space-md py-space-sm rounded-xl outline-none focus:bg-surface-muted transition-all duration-200 placeholder:text-text-muted/60 shadow-inner"
+                      id="name-input" placeholder="Alex Mercer" required="" type="text">
+                  </div>
+                  <div class="flex flex-col gap-1.5">
+                    <label class="font-label-caps text-label-caps text-text-muted uppercase" for="email-input">Your
+                      Email</label>
+                    <input
+                      class="w-full bg-surface-canvas text-text-primary font-body-sm text-body-sm px-space-md py-space-sm rounded-xl outline-none focus:bg-surface-muted transition-all duration-200 placeholder:text-text-muted/60 shadow-inner"
+                      id="email-input" placeholder="alex@company.com" required="" type="email">
+                  </div>
+                </div>
+                <!-- Row 2: Project Type & Estimated Budget -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+                  <div class="flex flex-col gap-1.5">
+                    <label class="font-label-caps text-label-caps text-text-muted uppercase" for="project-type">Project
+                      Type</label>
+                    <div class="relative">
+                      <select
+                        class="w-full appearance-none bg-surface-canvas text-text-primary font-body-sm text-body-sm px-space-md py-space-sm rounded-xl outline-none focus:bg-surface-muted transition-all duration-200 cursor-pointer shadow-inner pr-space-xl"
+                        id="project-type" required="">
+                        <option disabled="" selected="" value="">Select project category</option>
+                        <option value="website">Website Development</option>
+                        <option value="mobile">Mobile App Development</option>
+                        <option value="product">Full Digital Product</option>
+                        <option value="consultation">Technical Consultation</option>
+                      </select>
+                      <span
+                        class="material-symbols-outlined absolute right-space-sm top-1/2 -translate-y-1/2 pointer-events-none text-text-muted text-[20px]">expand_more</span>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-1.5">
+                    <label class="font-label-caps text-label-caps text-text-muted uppercase"
+                      for="project-budget">Estimated Budget</label>
+                    <div class="relative">
+                      <select
+                        class="w-full appearance-none bg-surface-canvas text-text-primary font-body-sm text-body-sm px-space-md py-space-sm rounded-xl outline-none focus:bg-surface-muted transition-all duration-200 cursor-pointer shadow-inner pr-space-xl"
+                        id="project-budget" required="">
+                        <option disabled="" selected="" value="">Select investment tier</option>
+                        <option value="tier1">Under $100</option>
+                        <option value="tier2">$100 â€“ $300</option>
+                        <option value="tier3">$300 â€“ $500</option>
+                        <option value="tier4">$500+</option>
+                      </select>
+                      <span
+                        class="material-symbols-outlined absolute right-space-sm top-1/2 -translate-y-1/2 pointer-events-none text-text-muted text-[20px]">payments</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Row 3: Project Details / Message -->
+                <div class="flex flex-col gap-1.5">
+                  <div class="flex items-center justify-between">
+                    <label class="font-label-caps text-label-caps text-text-muted uppercase"
+                      for="project-details">Project Details / Message</label>
+                    <span class="font-caption text-caption text-text-muted">Markdown supported</span>
+                  </div>
+                  <textarea
+                    class="w-full bg-surface-canvas text-text-primary font-body-sm text-body-sm p-space-md rounded-xl outline-none focus:bg-surface-muted transition-all duration-200 placeholder:text-text-muted/60 shadow-inner resize-y"
+                    id="project-details"
+                    placeholder="Give a brief summary of the project goals, timelines, and any design/tech references..."
+                    required="" rows="6"></textarea>
+                </div>
+                <!-- Form Feedback Notice Banner -->
+                <div
+                  class="hidden p-space-md rounded-xl bg-surface-container font-body-sm text-body-sm text-text-primary flex items-center gap-space-xs"
+                  id="form-feedback">
+                  <span class="material-symbols-outlined text-status-active text-[20px]">check_circle</span>
+                  <span class="">Thank you! Your message has been prepared. I'll reach out within 24 hours.</span>
+                </div>
+                <!-- Submit Button -->
+                <div
+                  class="pt-space-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+                  <button
+                    class="inline-flex items-center justify-center gap-space-xs bg-primary text-on-primary px-space-xl py-space-sm rounded-full font-body-md text-body-md font-medium hover:bg-neutral-800 transition-all duration-200 active:scale-95 shadow-sm group"
+                    id="submit-button" type="submit">
+                    <span class="">Send Project Inquiry</span>
+                    <span
+                      class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                  </button>
+                  <div class="flex items-center gap-space-2xs text-text-muted font-caption text-caption">
+                    <span class="material-symbols-outlined text-[16px]">lock</span>
+                    <span class="">Zero spam. No third-party tracking.</span>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Client-side interactivity script -->
+      <script>
+        function copyEmail() {
+          const email = 'https://github.com/Gokul-CyberExpert';
+          navigator.clipboard.writeText(email).then(() => {
+            const copyLabel = document.getElementById('copy-label');
+            const copyIcon = document.getElementById('copy-icon');
+            if (copyLabel && copyIcon) {
+              copyLabel.textContent = 'Copied!';
+              copyIcon.textContent = 'check';
+              setTimeout(() => {
+                copyLabel.textContent = 'Copy';
+                copyIcon.textContent = 'content_copy';
+              }, 2000);
+            }
+          }).catch(err => {
+            console.error('Failed to copy', err);
+          });
+        }
+
+        async function handleFormSubmit(e) {
+          e.preventDefault();
+          const feedback = document.getElementById('form-feedback');
+          const submitBtn = document.getElementById('submit-button');
+
+          // Disable button and show loading state
+          if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-70');
+            submitBtn.innerHTML = '<span>Sending…</span>';
+          }
+
+          // Collect form values
+          const payload = {
+            name: document.getElementById('name-input')?.value || '',
+            email: document.getElementById('email-input')?.value || '',
+            projectType: document.getElementById('project-type')?.value || '',
+            budget: document.getElementById('project-budget')?.value || '',
+            message: document.getElementById('project-details')?.value || '',
+          };
+
+          try {
+            const response = await fetch('/api/contact', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(payload),
+            });
+
+            const data = await response.json();
+
+            if (response.ok && data.success) {
+              // ── Success ──────────────────────────────────────────────────────────
+              if (feedback) {
+                feedback.classList.remove('hidden');
+                feedback.querySelector('span:last-child').textContent = data.message;
+              }
+              if (submitBtn) {
+                submitBtn.innerHTML = '<span>Message Dispatched</span> <span class="material-symbols-outlined text-[18px]">done</span>';
+              }
+            } else {
+              // ── Server-side validation error ──────────────────────────────────────
+              if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('opacity-70');
+                submitBtn.innerHTML = '<span>Send Project Inquiry</span> <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>';
+              }
+              alert(data.message || 'Something went wrong. Please try again.');
+            }
+          } catch (err) {
+            // ── Network / unexpected error ────────────────────────────────────────
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.classList.remove('opacity-70');
+              submitBtn.innerHTML = '<span>Send Project Inquiry</span> <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>';
+            }
+            alert('Could not reach the server. Please try again or email directly at https://github.com/Gokul-CyberExpert.');
+          }
+        }
+      </script>
+    </div>
+  </main>
+  <footer class="w-full bg-surface-subtle py-space-3xl">
+    <div
+      class="max-w-[72rem] mx-auto px-gutter-mobile lg:px-gutter-desktop flex flex-col md:flex-row items-center justify-between gap-space-xl">
+      <div
+        class="flex flex-col sm:flex-row items-center gap-space-xs text-text-muted font-body-sm text-body-sm text-center sm:text-left">
+        <span class="font-medium text-text-secondary">© 2026 Gokul N</span><span class="hidden sm:inline"></span><span
+          class="">Freelance Web &amp; Mobile Developer</span></div>
+      <div class="flex flex-wrap items-center justify-center gap-space-lg"><a
+          class="inline-flex items-center gap-1.5 font-body-sm text-body-sm text-text-secondary hover:text-text-primary transition-colors"
+          href="https://github.com/Gokul-CyberExpert" target="_blank" rel="noopener"><svg
+            class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z">
+            </path>
+          </svg><span class="">GitHub</span></a><a
+          class="inline-flex items-center gap-1.5 font-body-sm text-body-sm text-text-secondary hover:text-text-primary transition-colors"
+          href="https://linkedin.com" target="_blank" rel="noopener"><svg class="w-4 h-4 fill-current shrink-0"
+            viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z">
+            </path>
+          </svg><span class="">LinkedIn</span></a><a
+          class="inline-flex items-center gap-1.5 font-body-sm text-body-sm text-text-secondary hover:text-text-primary transition-colors"
+          href="https://discord.com/users/1496848249871401002" target="_blank" rel="noopener"><svg
+            class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.893.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z">
+            </path>
+          </svg><span class="">Discord</span></a><a
+          class="inline-flex items-center gap-1.5 font-body-sm text-body-sm text-text-secondary hover:text-text-primary transition-colors"
+          href="mailto:https://github.com/Gokul-CyberExpert"><svg class="w-4 h-4 fill-current shrink-0"
+            viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z">
+            </path>
+          </svg><span class="">Email</span></a></div>
+    </div>
+  </footer>
+
+
+
+
+
+</body>
+
+</html>

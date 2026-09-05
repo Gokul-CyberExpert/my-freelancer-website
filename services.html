@@ -1,0 +1,462 @@
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error": "#ba1a1a", "inverse-on-surface": "#f0f1f1", "on-tertiary-fixed-variant": "#005236", "background": "#f9f9f9", "text-secondary": "#52525b", "secondary": "#5d5e66", "on-error-container": "#93000a", "surface-container-low": "#f3f3f4", "on-primary": "#ffffff", "secondary-container": "#e3e1ec", "surface-canvas": "#ffffff", "tertiary-container": "#002113", "surface-container": "#eeeeee", "surface-container-high": "#e8e8e8", "primary": "#000000", "on-secondary": "#ffffff", "on-primary-container": "#858386", "on-primary-fixed-variant": "#474649", "text-primary": "#09090b", "on-primary-fixed": "#1c1b1d", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#002113", "tertiary": "#000000", "inverse-primary": "#c8c6c8", "on-background": "#1a1c1c", "tertiary-fixed-dim": "#4edea3", "status-active": "#10b981", "border-subtle": "#e4e4e7", "secondary-fixed-dim": "#c6c5cf", "on-surface-variant": "#47464a", "primary-container": "#1c1b1d", "error-container": "#ffdad6", "secondary-fixed": "#e3e1ec", "primary-fixed": "#e5e1e4", "on-secondary-fixed-variant": "#46464e", "text-muted": "#71717a", "primary-fixed-dim": "#c8c6c8", "surface-dim": "#dadada", "outline-variant": "#c8c5ca", "surface-variant": "#e2e2e2", "surface-muted": "#f4f4f5", "tertiary-fixed": "#6ffbbe", "on-error": "#ffffff", "surface-bright": "#f9f9f9", "surface-tint": "#5f5e60", "on-tertiary": "#ffffff", "surface": "#f9f9f9", "surface-subtle": "#fafafa", "surface-container-highest": "#e2e2e2", "on-secondary-fixed": "#1a1b22", "on-tertiary-container": "#009668", "on-secondary-container": "#63646c", "outline": "#78767b", "on-surface": "#1a1c1c", "inverse-surface": "#2f3131" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-2xl": "3rem", "space-xs": "0.5rem", "space-xl": "2rem", "gutter-desktop": "2rem", "space-2xs": "0.25rem", "space-md": "1rem", "container-max": "72rem", "space-lg": "1.5rem", "space-4xl": "6rem", "space-sm": "0.75rem", "space-3xl": "5rem", "gutter-mobile": "1.5rem" }, "fontFamily": { "display-hero-mobile": [ "Inter" ], "body-md": [ "Inter" ], "caption": [ "Inter" ], "label-caps": [ "Inter" ], "body-lg": [ "Inter" ], "headline-sm": [ "Inter" ], "body-sm": [ "Inter" ], "headline-lg": [ "Inter" ], "label-code": [ "JetBrains Mono" ], "display-hero": [ "Inter" ], "headline-md": [ "Inter" ], "title-md": [ "Inter" ] }, "fontSize": { "display-hero-mobile": [ "2.25rem", { "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "body-md": [ "1rem", { "lineHeight": "1.6", "fontWeight": "400" } ], "caption": [ "0.75rem", { "lineHeight": "1rem", "fontWeight": "500" } ], "label-caps": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.1em", "fontWeight": "600" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.65", "fontWeight": "400" } ], "headline-sm": [ "1.5rem", { "lineHeight": "1.3", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "body-sm": [ "0.875rem", { "lineHeight": "1.5", "fontWeight": "400" } ], "headline-lg": [ "2.25rem", { "lineHeight": "1.2", "letterSpacing": "-0.025em", "fontWeight": "800" } ], "label-code": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.05em", "fontWeight": "700" } ], "display-hero": [ "3.75rem", { "lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "headline-md": [ "1.875rem", { "lineHeight": "1.25", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "title-md": [ "1.125rem", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface-canvas font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 inset-x-0 z-50 flex justify-center pointer-events-none pt-space-lg"><div class="h-16 pointer-events-auto flex items-center px-space-xs py-space-2xs bg-surface-canvas/90 backdrop-blur-xl rounded-full shadow-[0_4px_24px_-4px_rgba(0,0,0,0.06),0_2px_8px_-2px_rgba(0,0,0,0.03)] p-space-xs"><nav class="flex items-center gap-1" data-active-classes="bg-primary text-on-primary font-body-sm text-body-sm rounded-full shadow-sm"><a class="px-space-md py-space-xs rounded-full font-body-sm text-body-sm text-text-secondary hover:text-text-primary hover:bg-surface-muted transition-all duration-200" data-path="home" href="/">Home</a><a class="px-space-md py-space-xs rounded-full font-body-sm text-body-sm text-text-secondary hover:text-text-primary hover:bg-surface-muted transition-all duration-200" data-path="about" href="/about">About</a><a aria-current="page" class="px-space-md py-space-xs transition-all duration-200 bg-primary text-on-primary font-body-sm text-body-sm rounded-full shadow-sm" data-path="services" href="/services">Services</a><a class="px-space-md py-space-xs rounded-full font-body-sm text-body-sm text-text-secondary hover:text-text-primary hover:bg-surface-muted transition-all duration-200" data-path="projects" href="/projects">Projects</a><a class="px-space-md py-space-xs rounded-full font-body-sm text-body-sm text-text-secondary hover:text-text-primary hover:bg-surface-muted transition-all duration-200" data-path="contact" href="/contact">Contact</a></nav></div></header><main class="w-full max-w-[72rem] mx-auto px-gutter-mobile lg:px-gutter-desktop pt-16 bg-surface-canvas"><div class="flex flex-col w-full">
+<!-- Top Intro Section -->
+<section class="w-full pt-space-xl pb-space-2xl flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-2xs rounded-full bg-surface-muted text-text-secondary mb-space-lg shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-status-active"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-text-primary">Services &amp; Offerings</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-text-primary tracking-tight max-w-3xl mb-space-md">
+      What I Can Build For You
+    </h1>
+<p class="font-body-lg text-body-lg text-text-secondary max-w-2xl">
+      High-quality freelance development services tailored to founders, creators, and businesses seeking reliable, maintainable digital products.
+    </p>
+<!-- Metrics Bar / Quick Trust Anchor -->
+
+</section>
+<!-- Core Offerings Grid -->
+<section class="w-full py-space-xl">
+<div class="flex flex-col gap-space-2xl">
+<!-- Service 01: Website Development -->
+<div class="w-full bg-surface-subtle rounded-3xl p-space-xl md:p-space-2xl shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl relative overflow-hidden">
+<div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-surface-container-high/40 blur-3xl pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row gap-space-xl items-start justify-between relative z-10">
+<!-- Left Column / Narrative -->
+<div class="lg:w-7/12 flex flex-col">
+<div class="flex items-center gap-space-sm mb-space-md">
+<span class="font-label-code text-label-code px-space-sm py-space-2xs rounded-full bg-primary text-on-primary font-bold">01</span>
+<span class="font-label-caps text-label-caps text-text-muted uppercase tracking-wider">Web Architecture</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary mb-space-sm">
+              Website Development
+            </h2>
+<p class="font-body-lg text-body-lg text-text-secondary mb-space-xl leading-relaxed">
+              Custom, fast, and responsive websites engineered to elevate your brand and drive results. Built with pixel precision, pristine semantic structure, and hyper-optimized assets.
+            </p>
+<h3 class="font-title-md text-title-md text-text-primary mb-space-md flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+              Scope &amp; Inclusions
+            </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-y-space-sm gap-x-space-md mb-space-xl">
+<div class="flex items-start gap-space-xs bg-surface-canvas p-space-sm rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-text-primary text-[18px] mt-0.5">devices</span>
+<div>
+<span class="font-title-md text-body-sm font-semibold text-text-primary block">Responsive Web Design</span>
+<span class="font-caption text-caption text-text-muted">Desktop, tablet, and mobile perfected</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs bg-surface-canvas p-space-sm rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-text-primary text-[18px] mt-0.5">rocket_launch</span>
+<div>
+<span class="font-title-md text-body-sm font-semibold text-text-primary block">Landing Pages &amp; Sites</span>
+<span class="font-caption text-caption text-text-muted">High-converting marketing portals</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs bg-surface-canvas p-space-sm rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-text-primary text-[18px] mt-0.5">corporate_fare</span>
+<div>
+<span class="font-title-md text-body-sm font-semibold text-text-primary block">Corporate &amp; Business</span>
+<span class="font-caption text-caption text-text-muted">Robust platforms designed for growth</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs bg-surface-canvas p-space-sm rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-text-primary text-[18px] mt-0.5">badge</span>
+<div>
+<span class="font-title-md text-body-sm font-semibold text-text-primary block">Personal &amp; Brand Portfolios</span>
+<span class="font-caption text-caption text-text-muted">Editorial aesthetics for high-profile creators</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs bg-surface-canvas p-space-sm rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-text-primary text-[18px] mt-0.5">terminal</span>
+<div>
+<span class="font-title-md text-body-sm font-semibold text-text-primary block">Frontend &amp; TypeScript</span>
+<span class="font-caption text-caption text-text-muted">Maintainable enterprise structure</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs bg-surface-canvas p-space-sm rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-text-primary text-[18px] mt-0.5">speed</span>
+<div>
+<span class="font-title-md text-body-sm font-semibold text-text-primary block">Speed &amp; SEO Engine</span>
+<span class="font-caption text-caption text-text-muted">Sub-second loads and rich microdata</span>
+</div>
+</div>
+</div>
+<!-- Tech Stack Pills -->
+<div class="flex flex-wrap items-center gap-space-xs mb-space-xl">
+<span class="font-label-code text-label-code text-text-muted mr-space-2xs uppercase">Stack:</span>
+<span class="px-space-md py-space-2xs rounded-full bg-surface-canvas font-label-code text-label-code text-text-primary shadow-sm flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> HTML5
+              </span>
+<span class="px-space-md py-space-2xs rounded-full bg-surface-canvas font-label-code text-label-code text-text-primary shadow-sm flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> CSS3 / Tailwind
+              </span>
+<span class="px-space-md py-space-2xs rounded-full bg-surface-canvas font-label-code text-label-code text-text-primary shadow-sm flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> TypeScript
+              </span>
+<span class="px-space-md py-space-2xs rounded-full bg-surface-canvas font-label-code text-label-code text-text-primary shadow-sm flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Python
+              </span>
+</div>
+<div>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-full bg-primary text-on-primary font-body-sm font-medium transition-all duration-200 hover:bg-neutral-800 shadow-sm" href="/contact">
+<span class="">Request Website Project</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Right Column / Graphical Showcase & Code Metric -->
+<div class="lg:w-5/12 w-full flex flex-col gap-space-md">
+<div class="w-full h-72 rounded-2xl overflow-hidden shadow-sm relative bg-surface-muted">
+<img class="w-full h-full object-cover" data-alt="High quality editorial photograph of a minimalist sleek dark-mode workstation showcasing clean typography and code structures on an ultrawide studio display, soft indirect natural sunlight and zinc tabletop texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtCKVotrTdEgpA0k-Rfvvl-dCJxODvZlmYANRLo-t4BCricnNv-l6SZvN7gDxBz1dRoBMepdT9SaJPPssbAnDgCQjaqxCAHzDjLe8kkWmpOP0JGZt66WNJbjADUhXEjBUmu5hZmENJXivBj4pCMoh-8NJja-J9C2b_4QX3YE3dnhlfGgL18HQrfsck04bG5e1wUMcTgQUk2Us7msUOINyTQKxAuorzAyFRBb-7NpCJpWL-Fu8pC0xsRA">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent flex items-end p-space-lg">
+<div class="text-on-primary">
+<span class="font-label-code text-label-code block text-on-primary-container">WEB SYSTEMS</span>
+<span class="font-title-md text-title-md text-on-primary font-bold">Engineered for Instant Interactivity</span>
+</div>
+</div>
+</div>
+<!-- SVG Inline Performance Dial -->
+<div class="bg-surface-canvas p-space-lg rounded-2xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-text-primary">100 / 100</span>
+<span class="font-body-sm text-body-sm text-text-secondary">Core Web Vitals Readiness</span>
+</div>
+<div class="w-16 h-16 relative flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+<path class="text-surface-muted" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="98, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="material-symbols-outlined text-text-primary absolute text-[18px]">verified</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Service 02: Mobile App Development -->
+<div class="w-full bg-surface-subtle rounded-3xl p-space-xl md:p-space-2xl shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl relative overflow-hidden">
+<div class="absolute -left-20 -top-20 w-80 h-80 rounded-full bg-surface-container-high/40 blur-3xl pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row-reverse gap-space-xl items-start justify-between relative z-10">
+<!-- Main Content Details -->
+<div class="lg:w-7/12 flex flex-col">
+<div class="flex items-center gap-space-sm mb-space-md">
+<span class="font-label-code text-label-code px-space-sm py-space-2xs rounded-full bg-primary text-on-primary font-bold">02</span>
+<span class="font-label-caps text-label-caps text-text-muted uppercase tracking-wider">Touch &amp; Native Engineering</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary mb-space-sm">
+              Mobile App Development
+            </h2>
+<p class="font-body-lg text-body-lg text-text-secondary mb-space-xl leading-relaxed">
+              Intuitive, performant mobile applications designed for seamless handheld experiences. Purpose-built client architectures running with buttery-smooth 60fps frame budgets.
+            </p>
+<h3 class="font-title-md text-title-md text-text-primary mb-space-md flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+              Scope &amp; Inclusions
+            </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-y-space-sm gap-x-space-md mb-space-xl">
+<div class="flex items-start gap-space-xs bg-surface-canvas p-space-sm rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-text-primary text-[18px] mt-0.5">touch_app</span>
+<div>
+<span class="font-title-md text-body-sm font-semibold text-text-primary block">Mobile UI/UX Implementation</span>
+<span class="font-caption text-caption text-text-muted">Human Interface &amp; Material Guidelines</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs bg-surface-canvas p-space-sm rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-text-primary text-[18px] mt-0.5">layers</span>
+<div>
+<span class="font-title-md text-body-sm font-semibold text-text-primary block">Cross-Platform Architecture</span>
+<span class="font-caption text-caption text-text-muted">Unified codebases without compromises</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs bg-surface-canvas p-space-sm rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-text-primary text-[18px] mt-0.5">gesture</span>
+<div>
+<span class="font-title-md text-body-sm font-semibold text-text-primary block">Responsive Touch Interactions</span>
+<span class="font-caption text-caption text-text-muted">Haptics, swipe physics, &amp; fluid drawers</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs bg-surface-canvas p-space-sm rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-text-primary text-[18px] mt-0.5">hub</span>
+<div>
+<span class="font-title-md text-body-sm font-semibold text-text-primary block">Backend API &amp; Database</span>
+<span class="font-caption text-caption text-text-muted">Resilient sync layers &amp; schema design</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs bg-surface-canvas p-space-sm rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-text-primary text-[18px] mt-0.5">cloud_off</span>
+<div>
+<span class="font-title-md text-body-sm font-semibold text-text-primary block">Offline Data &amp; State</span>
+<span class="font-caption text-caption text-text-muted">First-class caching &amp; optimistic sync</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs bg-surface-canvas p-space-sm rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-text-primary text-[18px] mt-0.5">app_shortcut</span>
+<div>
+<span class="font-title-md text-body-sm font-semibold text-text-primary block">Performance &amp; Store Readiness</span>
+<span class="font-caption text-caption text-text-muted">App Store &amp; Google Play approval setup</span>
+</div>
+</div>
+</div>
+<!-- Tech Stack Pills -->
+<div class="flex flex-wrap items-center gap-space-xs mb-space-xl">
+<span class="font-label-code text-label-code text-text-muted mr-space-2xs uppercase">Stack:</span>
+<span class="px-space-md py-space-2xs rounded-full bg-surface-canvas font-label-code text-label-code text-text-primary shadow-sm flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> TypeScript
+              </span>
+<span class="px-space-md py-space-2xs rounded-full bg-surface-canvas font-label-code text-label-code text-text-primary shadow-sm flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Mobile Interfaces
+              </span>
+<span class="px-space-md py-space-2xs rounded-full bg-surface-canvas font-label-code text-label-code text-text-primary shadow-sm flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> REST APIs
+              </span>
+</div>
+<div>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-full bg-primary text-on-primary font-body-sm font-medium transition-all duration-200 hover:bg-neutral-800 shadow-sm" href="/contact">
+<span class="">Request Mobile App</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Left Graphical Showcase -->
+<div class="lg:w-5/12 w-full flex flex-col gap-space-md">
+<div class="w-full h-96 rounded-2xl overflow-hidden shadow-sm relative bg-surface-muted"><img class="w-full h-full object-cover" data-alt="Sophisticated product photo of modern premium smartphones tilted elegantly on a smooth pale stone surface, displaying refined monochrome iOS application interfaces with sharp typography and gesture cards" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6IR1_AA2rxfhXOByDTeSI4DHx5L5SI0xpHF6Adi4QpgwYEPk3OBPg74G7_devKhgJsTLjz-_O558A4zjreBs35C1saKWHNH-2ha5CQA-p4RlMHnzoKpG29aYPhp3dOUdfLyd0xKoBIqZNQAyt6IAL_apmH-MSROWudmk8q8pSX3JDtS770DBrOtejDg9BQSVphkLwLR8DfcYHjleftq9IlnFIreD71uCs1ZVCoCUUrltAXLCzO6rnTw"><div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent flex items-end p-space-lg"><div class="text-on-primary"><span class="font-label-code text-label-code block text-on-primary-container">TOUCH EXPERIENCES</span><span class="font-title-md text-title-md text-on-primary font-bold">Natural Gestures &amp; Low Latency</span></div></div></div>
+<!-- SVG Data Flow Visualization -->
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4-Step Engagement Process Section -->
+<section class="w-full py-space-3xl">
+<div class="flex flex-col items-center text-center mb-space-2xl">
+<span class="font-label-code text-label-code uppercase tracking-widest text-text-muted mb-space-xs">HOW WE WORK</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Engagement Process</h2>
+<p class="font-body-md text-body-md text-text-secondary max-w-lg mt-space-2xs">
+        A deliberate, predictable progression from napkin sketches to production systems.
+      </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Step 01 -->
+<div class="bg-surface-subtle p-space-xl rounded-2xl shadow-sm flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-space-lg">
+<span class="font-label-code text-label-code text-text-muted font-bold">01</span>
+<div class="w-8 h-8 rounded-full bg-surface-canvas flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-text-primary text-[18px]">forum</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-space-xs">Discuss</h3>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+            Understand your vision, target audience, core constraints, and precise project requirements with open communication.
+          </p>
+</div>
+<div class="mt-space-lg pt-space-md">
+<span class="font-caption text-caption text-text-muted block">Outcome: Detailed Scope Brief</span>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="bg-surface-subtle p-space-xl rounded-2xl shadow-sm flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-space-lg">
+<span class="font-label-code text-label-code text-text-muted font-bold">02</span>
+<div class="w-8 h-8 rounded-full bg-surface-canvas flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-text-primary text-[18px]">schema</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-space-xs">Plan</h3>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+            Architecture layout, UI flows, technology selections, and an explicit milestone timeline with zero guesswork.
+          </p>
+</div>
+<div class="mt-space-lg pt-space-md">
+<span class="font-caption text-caption text-text-muted block">Outcome: Blueprint &amp; Milestones</span>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="bg-surface-subtle p-space-xl rounded-2xl shadow-sm flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-space-lg">
+<span class="font-label-code text-label-code text-text-muted font-bold">03</span>
+<div class="w-8 h-8 rounded-full bg-surface-canvas flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-text-primary text-[18px]">code</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-space-xs">Build</h3>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+            Clean, maintainable code implementation paired with weekly staging previews and ongoing architectural check-ins.
+          </p>
+</div>
+<div class="mt-space-lg pt-space-md">
+<span class="font-caption text-caption text-text-muted block">Outcome: Staged Working Software</span>
+</div>
+</div>
+<!-- Step 04 -->
+<div class="bg-surface-subtle p-space-xl rounded-2xl shadow-sm flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-space-lg">
+<span class="font-label-code text-label-code text-text-muted font-bold">04</span>
+<div class="w-8 h-8 rounded-full bg-surface-canvas flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-text-primary text-[18px]">rocket</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-space-xs">Deliver</h3>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+            Thorough cross-device regression testing, server setup, DNS deployment, and clean documented codebase handover.
+          </p>
+</div>
+<div class="mt-space-lg pt-space-md">
+<span class="font-caption text-caption text-text-muted block">Outcome: Live Launch &amp; Assets</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Standards / Why Choose Gokul -->
+<section class="w-full py-space-2xl">
+<div class="bg-surface-subtle rounded-3xl p-space-xl md:p-space-2xl shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-5 flex flex-col">
+<span class="font-label-caps text-label-caps text-text-muted uppercase tracking-wider mb-space-2xs">ENGINEERING ETHOS</span>
+<h2 class="font-headline-md text-headline-md text-text-primary mb-space-md">The Standard Behind Every Delivery</h2>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed">
+            I don't just assemble pre-baked templates. I write clean, hand-crafted code with careful separation of concerns, accessible DOM structures, and sustainable documentation your team can build on forever.
+          </p>
+</div>
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="bg-surface-canvas p-space-md rounded-2xl shadow-sm flex flex-col gap-space-xs">
+<span class="material-symbols-outlined text-text-primary text-[24px]">lock</span>
+<h4 class="font-title-md text-title-md text-text-primary">Direct Ownership</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">You own 100% of all intellectual property, repositories, graphics, and server credentials on delivery.</p>
+</div>
+<div class="bg-surface-canvas p-space-md rounded-2xl shadow-sm flex flex-col gap-space-xs">
+<span class="material-symbols-outlined text-text-primary text-[24px]">query_stats</span>
+<h4 class="font-title-md text-title-md text-text-primary">Performance First</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">Strict asset budgets, semantic tags, and lazy-loading ensure top tier conversion rates and SEO visibility.</p>
+</div>
+<div class="bg-surface-canvas p-space-md rounded-2xl shadow-sm flex flex-col gap-space-xs">
+<span class="material-symbols-outlined text-text-primary text-[24px]">smart_outlet</span>
+<h4 class="font-title-md text-title-md text-text-primary">No Hidden Stacks</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">Standardized technologies like TypeScript and modern CSS mean zero vendor lock-in or obscure plugins.</p>
+</div>
+<div class="bg-surface-canvas p-space-md rounded-2xl shadow-sm flex flex-col gap-space-xs">
+<span class="material-symbols-outlined text-text-primary text-[24px]">support_agent</span>
+<h4 class="font-title-md text-title-md text-text-primary">Post-Launch Support</h4>
+<p class="font-body-sm text-body-sm text-text-secondary">30-day warranty on all delivered code with immediate troubleshooting and operational monitoring.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="w-full py-space-2xl">
+<div class="flex flex-col items-center text-center mb-space-2xl">
+<span class="font-label-code text-label-code uppercase tracking-widest text-text-muted mb-space-xs">QUESTIONS &amp; ANSWERS</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Frequently Asked Questions</h2>
+<p class="font-body-md text-body-md text-text-secondary max-w-lg mt-space-2xs">
+        Everything you need to know about working together and billing timelines.
+      </p>
+</div>
+<div class="max-w-3xl mx-auto w-full flex flex-col gap-space-md" id="faq-container">
+<!-- FAQ 1 -->
+<div class="bg-surface-subtle rounded-2xl p-space-lg shadow-sm transition-all cursor-pointer faq-item" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-text-primary font-semibold">What is your typical project timeline?</span>
+<span class="material-symbols-outlined text-text-muted transform transition-transform duration-200 faq-icon text-[20px]">expand_more</span>
+</div>
+<div class="faq-content mt-space-sm pt-space-xs font-body-sm text-body-sm text-text-secondary leading-relaxed hidden">
+          Standard landing pages and brand websites generally take 2 to 3 weeks from initial kickoff to live launch. Complex mobile apps or multi-featured platforms typically range between 4 to 8 weeks depending on backend and integration needs.
+        </div>
+</div>
+<!-- FAQ 2 -->
+<div class="bg-surface-subtle rounded-2xl p-space-lg shadow-sm transition-all cursor-pointer faq-item" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-text-primary font-semibold">How do we handle payments and invoicing?</span>
+<span class="material-symbols-outlined text-text-muted transform transition-transform duration-200 faq-icon text-[20px]">expand_more</span>
+</div>
+<div class="faq-content hidden mt-space-sm pt-space-xs font-body-sm text-body-sm text-text-secondary leading-relaxed">
+          Projects are typically split into standard milestone invoices: 50% upfront deposit upon contract signing, and 50% upon final delivery and client acceptance before DNS transfer. Custom installment schedules are available for larger scopes.
+        </div>
+</div>
+<!-- FAQ 3 -->
+<div class="bg-surface-subtle rounded-2xl p-space-lg shadow-sm transition-all cursor-pointer faq-item" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-text-primary font-semibold">Can you build both the design and the engineering?</span>
+<span class="material-symbols-outlined text-text-muted transform transition-transform duration-200 faq-icon text-[20px]">expand_more</span>
+</div>
+<div class="faq-content hidden mt-space-sm pt-space-xs font-body-sm text-body-sm text-text-secondary leading-relaxed">
+          Yes. I handle both UI design and technical frontend/backend development end-to-end. If you already have existing Figma or design specifications, I can also take those and execute them with 100% fidelity into clean code.
+        </div>
+</div>
+<!-- FAQ 4 -->
+<div class="bg-surface-subtle rounded-2xl p-space-lg shadow-sm transition-all cursor-pointer faq-item" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-text-primary font-semibold">What happens after the project is deployed?</span>
+<span class="material-symbols-outlined text-text-muted transform transition-transform duration-200 faq-icon text-[20px]">expand_more</span>
+</div>
+<div class="faq-content hidden mt-space-sm pt-space-xs font-body-sm text-body-sm text-text-secondary leading-relaxed">
+          Every completed project includes 30 days of complimentary post-launch bug fixing and tech support. Following that, you can retain me for on-demand feature additions, maintenance retainers, or continuous performance audits.
+        </div>
+</div>
+</div>
+</section>
+<!-- Bottom Contact CTA Banner -->
+<section class="w-full pt-space-xl pb-space-4xl">
+<div class="w-full bg-primary text-on-primary rounded-3xl p-space-xl md:p-space-2xl shadow-xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-space-xl">
+<div class="flex flex-col max-w-xl text-center md:text-left z-10">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-2xs rounded-full bg-surface-canvas/10 text-on-primary mb-space-md w-fit mx-auto md:mx-0">
+<span class="w-2 h-2 rounded-full bg-status-active"></span>
+<span class="font-label-caps text-label-caps tracking-widest uppercase">Direct Engagement</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-primary mb-space-xs">
+          Have a project in mind? Let's build something remarkable.
+        </h3>
+<p class="font-body-md text-body-md text-on-primary-container">
+          Whether you need a full platform build or a specialized client application, I'm currently accepting new contracts for upcoming quarters.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm z-10 w-full sm:w-auto">
+<a class="w-full sm:w-auto text-center px-space-xl py-space-sm rounded-full bg-surface-canvas text-primary font-body-sm font-semibold transition-all duration-200 hover:bg-neutral-100 shadow-md" href="/contact">
+          Start a Project
+        </a>
+<a class="w-full sm:w-auto text-center px-space-lg py-space-sm rounded-full bg-surface-canvas/10 text-on-primary font-body-sm font-medium transition-all duration-200 hover:bg-surface-canvas/20" href="/contact">
+          Schedule Call
+        </a>
+</div>
+<!-- Subtle background radial tint -->
+<div class="absolute -right-16 -bottom-16 w-96 h-96 rounded-full bg-surface-canvas/5 blur-3xl pointer-events-none"></div>
+</div>
+</section>
+<!-- Interactive behavior script for FAQ toggling -->
+<script>
+    function toggleFaq(card) {
+      const content = card.querySelector('.faq-content');
+      const icon = card.querySelector('.faq-icon');
+      const isHidden = content.classList.contains('hidden');
+      
+      // Close other FAQs
+      document.querySelectorAll('.faq-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.faq-icon').forEach(el => el.classList.remove('rotate-180'));
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-subtle py-space-3xl"><div class="max-w-[72rem] mx-auto px-gutter-mobile lg:px-gutter-desktop flex flex-col md:flex-row items-center justify-between gap-space-xl"><div class="font-body-sm text-body-sm text-text-secondary text-center md:text-left"><span class="">© 2026 Gokul N  Freelance Web &amp; Mobile Developer</span></div><div class="flex flex-wrap items-center justify-center gap-space-xl"><a class="inline-flex items-center gap-1.5 font-body-sm text-body-sm text-text-secondary hover:text-text-primary transition-colors" href="https://github.com/Gokul-CyberExpert" target="_blank" rel="noopener"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"></path></svg>GitHub</a><a class="inline-flex items-center gap-1.5 font-body-sm text-body-sm text-text-secondary hover:text-text-primary transition-colors" href="#"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.45 1.45 0 1 0 0-2.9 1.45 1.45 0 0 0 0 2.9m1.4 9.74v-8.37H5.06v8.37h2.8z"></path></svg>LinkedIn</a><a class="inline-flex items-center gap-1.5 font-body-sm text-body-sm text-text-secondary hover:text-text-primary transition-colors" href="https://discord.com/users/1496848249871401002" target="_blank" rel="noopener"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.893.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"></path></svg>Discord</a></div></div></footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
+
+
