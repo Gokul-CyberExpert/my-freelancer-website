@@ -57,7 +57,10 @@ app.get('/*splat', (_req, res) => {
 // ── Global error handler (must be last) ──────────────────────────────────────
 app.use(errorHandler);
 
-// ── Start server ──────────────────────────────────────────────────────────────
+// ── Export app for Vercel serverless function ────────────────────────────────
+export default app;
+
+// ── Start server (for local dev / standalone container) ──────────────────────
 async function start(): Promise<void> {
   try {
     await verifyMailer();
@@ -74,5 +77,7 @@ async function start(): Promise<void> {
   });
 }
 
-start();
+if (!process.env.VERCEL) {
+  start();
+}
 
