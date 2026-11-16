@@ -202,7 +202,7 @@ After deployment, your website will be available at your configured Vercel domai
 
 ### 🔗 Live Portfolio
 
-**https://my-freelancer-website.vercel.app/**
+**[https://my-freelancer-website.vercel.app/*](https://gokudev.vercel.app/)*
 
 ---
 
@@ -218,7 +218,7 @@ https://discord.com/users/1496848249871401002
 
 ### Portfolio
 
-https://my-freelancer-website.vercel.app/
+[https://my-freelancer-website.vercel.app/](https://gokudev.vercel.app/)
 
 ---
 
