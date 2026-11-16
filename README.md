@@ -212,6 +212,10 @@ After deployment, your website will be available at your configured Vercel domai
 
 https://github.com/Gokul-CyberExpert
 
+### LinkedIn
+
+https://www.linkedin.com/in/gokul-n-dev/
+
 ### Discord
 
 https://discord.com/users/1496848249871401002
