@@ -5,7 +5,7 @@ A modern, responsive **freelancer portfolio website** and backend inquiry servic
 ## 🌐 Live Website
 
 🚀 **Visit the live portfolio:**
-https://my-freelancer-website.vercel.app/
+[https://my-freelancer-website.vercel.app/](https://gokudev.vercel.app/)
 
 ## 📸 Website Preview
 
